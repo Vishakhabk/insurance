@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "projectName": "qa231026",
+  "generatedAt": "2026-10-23T13:19:39.807Z",
+  "source": "golden-repo-guidance",
+  "options": {
+    "ui": [
+      "angular"
+    ],
+    "backend": [
+      "node",
+      "dotnet",
+      "php"
+    ],
+    "database": [],
+    "ai": [],
+    "uiCustom": [],
+    "backendCustom": [],
+    "databaseCustom": []
+  }
+}

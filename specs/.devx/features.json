@@ -1,0 +1,273 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-23T13:24:58.769Z",
+  "enableTdd": false,
+  "totalFeatures": 2,
+  "features": [
+    {
+      "id": 29401,
+      "taskId": "FEATURE-29401",
+      "title": "Digital claim intake",
+      "slug": "digital-claim-intake",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What application channels are required for this feature: web, mobile, internal user interface, API-only, or multiple channels?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What exact claim intake data fields are required for a health insurance claim submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Which claim intake fields are required, optional, conditional, or prohibited?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "Must a policyholder be restricted to submitting claims only for themselves, or can they submit for any insured person covered under their policy?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What exactly qualifies as a “claim intake user” role, and which internal roles are included?",
+          "blocking": true
+        },
+        {
+          "id": "oq-6",
+          "text": "Is anonymous or unauthenticated claim intake allowed for any channel or actor type?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "Must the system verify policy existence or coverage eligibility during digital intake?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Must supporting claim documents be uploaded as part of initial submission, or is that handled later in document collection?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Is a draft, save-and-resume, or partially completed intake flow required?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What confirmation artifact is required after successful submission: acknowledgement only, claim reference, receipt, or next-step instructions?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What validation error messages and user-facing copy are required?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What are the required state values for a newly submitted claim intake record?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "Is duplicate claim detection required at intake time?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Are there product-, jurisdiction-, channel-, or effective-date-specific claim intake rules that must be configurable?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "What retention and deletion policy applies specifically to claim data and claim documents for this feature?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "Is idempotency required for digital claim submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "Are lifecycle events emitted when a claim intake is created?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "Are notifications sent after submission, and if so, to whom and through which channels?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Are there distinct UI or workflow differences between policyholder self-service and internal claim intake user submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "What timezone should govern display and storage of intake timestamps in the selected channel?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/digital-claim-intake/specs.md",
+        "requirements": "specs/digital-claim-intake/requirements.md",
+        "tasks": "specs/digital-claim-intake/tasks.md",
+        "prompt": "specs/digital-claim-intake/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 29426,
+      "taskId": "FEATURE-29426",
+      "title": "[Planning] Define submission API schema, auth model, and persistence mapping",
+      "slug": "submission-api-schema-auth-model",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What is the exact endpoint path for the claim submission API?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the HTTP method for claim submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Which request fields are mandatory versus optional?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What are the exact data types, formats, length limits, and validation rules for each field?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What is the canonical schema for `attachments[]`? For example, does it contain file references, metadata objects, or uploaded content descriptors?",
+          "blocking": true
+        },
+        {
+          "id": "oq-6",
+          "text": "What is the initial `status` value assigned on successful submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What are the allowed values for `claimType` and `status`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What is the exact format for `dateOfService` and `submittedAt`, including timezone handling expectations?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "What currency and decimal precision rules apply to `totalClaimAmount`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Is `clientRequestId` required on every submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Is duplicate detection by `clientRequestId` mandatory, optional, or environment-dependent?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "If `clientRequestId` duplicate detection applies, what is the uniqueness scope and retention window?",
+          "blocking": true
+        },
+        {
+          "id": "oq-13",
+          "text": "Are both bearer token and session-derived identity supported simultaneously, or is one selected per channel/deployment?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Which actors beyond customer/policyholder are allowed to submit claims, if any?",
+          "blocking": true
+        },
+        {
+          "id": "oq-15",
+          "text": "Must `insuredId` belong to the referenced policy, and must it match the authenticated user or merely be associated with the policy?",
+          "blocking": true
+        },
+        {
+          "id": "oq-16",
+          "text": "What exact policy-binding rule determines authorized access for `403` decisions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-17",
+          "text": "What is the exact error payload structure for each status code?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "What is the success status code for a successful submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Are `claimId`, `submittedAt`, and `correlationId` system-generated, and if so, by what governing rules?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "What are the exact claim header, status, and metadata table names and key relationships?",
+          "blocking": false
+        },
+        {
+          "id": "oq-21",
+          "text": "How should `attachments[]` be persisted across claim header, status, and metadata targets, if at all?",
+          "blocking": false
+        },
+        {
+          "id": "oq-22",
+          "text": "What audit logging requirements must accompany submission creation and authorization decisions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-23",
+          "text": "Where must the approved OpenAPI contract, mapping, and status matrix be published for implementation consumption?",
+          "blocking": false
+        },
+        {
+          "id": "oq-24",
+          "text": "Are there any localization, jurisdiction, or currency rules that materially affect claim submission validation for this feature?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/submission-api-schema-auth-model/specs.md",
+        "requirements": "specs/submission-api-schema-auth-model/requirements.md",
+        "tasks": "specs/submission-api-schema-auth-model/tasks.md",
+        "prompt": "specs/submission-api-schema-auth-model/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 29426,
+          "title": "[Planning] Define submission API schema, auth model, and persistence mapping",
+          "state": "New",
+          "storyPoints": null
+        }
+      ]
+    }
+  ]
+}
