@@ -1,16 +1,12 @@
-# Architecture — qa231026
+# Architecture — qa021126
 
 > Auto-generated architecture overview. Update this file as the system evolves.
 
 ## Feature Map
 
-### Digital claim intake
-- 0 user stories
-- Stories: 
-
-### [Planning] Define submission API schema, auth model, and persistence mapping
+### Application Intake for Age and Disease Data
 - 1 user stories
-- Stories: [Planning] Define submission API schema, auth model, and persistence mapping
+- Stories: Application Intake for Age and Disease Data
 
 ## Guidelines
 

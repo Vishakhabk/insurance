@@ -1,12 +1,12 @@
 # Golden Repository UI/UX Design System
 
-Generated for: qa231026
-Repository: Insurance golden repo
-Generated at: 2026-10-23T13:24:58.672Z
+Generated for: qa021126
+Repository: mapped Golden Repo
+Generated at: 2026-11-02T12:47:56.683Z
 
 ## Warnings
 
-- None
+- Golden Repo reference(s) skipped: ownership could not be verified.
 
 ## How To Use
 
@@ -19,75 +19,4 @@ Generated at: 2026-10-23T13:24:58.672Z
 
 ## Design System
 
-## Design Principles & Brand
-
-### Purpose
-
-- Digitize and standardize insurance journeys.
-- Reduce manual processing and turnaround time.
-
-### Supported Users
-
-- Customer / policyholder
-- Insured person
-- Proposer / applicant
-- Beneficiary / nominee
-- Agent / advisor
-- Broker
-- Underwriter
-- Claims assessor
-- Claims investigator
-- Finance user
-- Customer service representative
-- Compliance officer
-- Administrator
-- Auditor
-
-### Governance and Operational Principles
-
-- Ensure traceability, segregation of duties, and auditability.
-
-### Configuration Scope
-
-- Support configurable:
-  - Products
-  - Jurisdictions
-  - Currencies
-  - Taxes
-  - Channels
-
-## Accessibility
-
-### Requirements
-
-- Accessibility is a platform requirement.
-
-## UI Naming & Structure
-
-### User and Role Naming
-
-- Use the following role and actor terminology in the UI where applicable:
-  - Customer / policyholder
-  - Insured person
-  - Proposer / applicant
-  - Beneficiary / nominee
-  - Agent / advisor
-  - Broker
-  - Underwriter
-  - Claims assessor
-  - Claims investigator
-  - Finance user
-  - Customer service representative
-  - Compliance officer
-  - Administrator
-  - Auditor
-
-### UI Structure and Governance Requirements
-
-- UI structure and system behavior must support:
-  - Traceability
-  - Segregation of duties
-  - Audit logging
-  - Strong authentication and authorization
-  - Localization and timezone support
-  - Privacy and data minimization
+No UI/design guidance was found in the Golden Repository. Regenerate after vectorizing Golden Repo design/style files (design system, style guide, tokens, component or CSS files).

@@ -1,9 +1,9 @@
-# qa231026
+# qa021126
 
 > Auto-generated project context for AI-assisted development.
-> Last updated: 2026-10-23
+> Last updated: 2026-11-02
 
-**Organization:** https://artizentastra.atlassian.net
+**Organization:** test27112025
 
 ## Development Methodology
 
@@ -14,10 +14,9 @@ Every feature has:
 - `requirements.md` — Implementation acceptance checklist
 - `prompt.md` — Ready-to-use implementation prompt
 
-## Features (2)
+## Features (1)
 
-- **Digital claim intake** (0 user stories)
-- **[Planning] Define submission API schema, auth model, and persistence mapping** (1 user stories)
+- **Application Intake for Age and Disease Data** (1 user stories)
 
 ## Getting Started
 

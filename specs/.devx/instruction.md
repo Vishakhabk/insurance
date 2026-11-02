@@ -1,6 +1,6 @@
 # Development Instructions
 
-> Last updated: 2026-10-23
+> Last updated: 2026-11-02
 > This file is regenerated during specs generation. Keep inventory updates in version control and restore any manual edits after regeneration.
 
 ## Active Configuration

@@ -1,20 +1,13 @@
 {
   "trackerVersion": 1,
-  "updatedAt": "2026-10-23T13:24:58.769Z",
+  "updatedAt": "2026-11-02T12:47:56.698Z",
   "tasks": {
-    "FEATURE-29401": {
+    "FEATURE-100461": {
       "status": "NEEDS_CLARIFICATION",
-      "title": "Digital claim intake",
-      "featureId": 29401,
-      "slug": "digital-claim-intake",
-      "updatedAt": "2026-10-23T13:24:58.769Z"
-    },
-    "FEATURE-29426": {
-      "status": "NEEDS_CLARIFICATION",
-      "title": "[Planning] Define submission API schema, auth model, and persistence mapping",
-      "featureId": 29426,
-      "slug": "submission-api-schema-auth-model",
-      "updatedAt": "2026-10-23T13:24:58.769Z"
+      "title": "Application Intake for Age and Disease Data",
+      "featureId": 100461,
+      "slug": "application-intake-age-disease",
+      "updatedAt": "2026-11-02T12:47:56.698Z"
     }
   }
 }
