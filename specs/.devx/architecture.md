@@ -4,9 +4,7 @@
 
 ## Feature Map
 
-### Premium Eligibility Decisioning for Age and Health
-- 3 user stories
-- Stories: As an Underwriter, I want to capture applicant age and health information so that premium eligibility decisioning uses complete underwriting data, As an Underwriting System, I want to apply approved age and health rules to premium eligibility so that decisions are consistent and compliant, As a Product Administrator, I want to manage premium eligibility rules for age and health so that underwriting updates can be made without code changes
+
 
 ## Guidelines
 
