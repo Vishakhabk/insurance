@@ -14,8 +14,9 @@ Every feature has:
 - `requirements.md` — Implementation acceptance checklist
 - `prompt.md` — Ready-to-use implementation prompt
 
-## Features (0)
+## Features (1)
 
+- **Premium Eligibility Decisioning for Age and Health** (0 user stories)
 
 
 ## Getting Started
