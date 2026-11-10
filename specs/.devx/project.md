@@ -1,9 +1,9 @@
-# qa021126
+# qa10112602
 
 > Auto-generated project context for AI-assisted development.
-> Last updated: 2026-11-02
+> Last updated: 2026-11-10
 
-**Organization:** test27112025
+**Organization:** https://dev.azure.com/test27112025
 
 ## Development Methodology
 
@@ -16,7 +16,7 @@ Every feature has:
 
 ## Features (1)
 
-- **Application Intake for Age and Disease Data** (1 user stories)
+- **Premium Eligibility Decisioning for Age and Health** (3 user stories)
 
 ## Getting Started
 

@@ -1,7 +1,7 @@
 {
-  "name": "qa021126-mcp-server",
+  "name": "qa10112602-mcp-server",
   "version": "1.0.0",
-  "description": "Astra MCP server for qa021126 specs",
+  "description": "Astra MCP server for qa10112602 specs",
   "type": "module",
   "main": "server.js",
   "scripts": {
