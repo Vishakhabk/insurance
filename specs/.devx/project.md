@@ -14,9 +14,10 @@ Every feature has:
 - `requirements.md` — Implementation acceptance checklist
 - `prompt.md` — Ready-to-use implementation prompt
 
-## Features (1)
+## Features (2)
 
-- **DemoIntern Business Requirements Document** (9 user stories)
+- **DemoIntern Business Requirements Document** (0 user stories)
+- **Unified Cloud-Ready CM and AM Web Workspace** (11 user stories)
 
 ## Getting Started
 

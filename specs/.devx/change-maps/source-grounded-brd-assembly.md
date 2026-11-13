@@ -13,7 +13,7 @@
 - `specs/.devx/current-state.md`
 - `specs/.devx/implementation-check.md`
 - `specs/.devx/change-maps/source-grounded-brd-assembly.md`
-- `specs/.devx/guidance/versions/645deab5ba60/golden-repo-guidelines.md`
+- `specs/.devx/guidance/golden-repo-guidelines.md`
 - `specs/source-grounded-brd-assembly/specs.md`
 - `specs/source-grounded-brd-assembly/requirements.md`
 - `specs/source-grounded-brd-assembly/prompt.md`

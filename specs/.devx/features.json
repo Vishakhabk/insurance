@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-11-13T09:49:41.489Z",
+  "generatedAt": "2026-11-13T10:26:48.118Z",
   "enableTdd": false,
-  "totalFeatures": 1,
+  "totalFeatures": 2,
   "features": [
     {
       "id": 80977,
@@ -93,68 +93,179 @@
           "blocking": false
         }
       ],
-      "storyCount": 9,
-      "totalStoryPoints": 20,
+      "storyCount": 0,
+      "totalStoryPoints": 0,
       "files": {
         "specs": "specs/source-grounded-brd-assembly/specs.md",
         "requirements": "specs/source-grounded-brd-assembly/requirements.md",
         "tasks": "specs/source-grounded-brd-assembly/tasks.md",
         "prompt": "specs/source-grounded-brd-assembly/prompt.md"
       },
+      "userStories": []
+    },
+    {
+      "id": 78094,
+      "taskId": "FEATURE-78094",
+      "title": "Unified Cloud-Ready CM and AM Web Workspace",
+      "slug": "unified-servicing-workspace-auth",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact single-record identifier formats are supported?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What exact customer/account summary retrieval API endpoints, methods, and schemas are approved?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Is the coordinated customer/account retrieval one API call or multiple orchestrated calls?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What exact route list supports inherited context vs default protected state?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What exact module catalog is in scope beyond CM, AM, and Mimir/related modules?",
+          "blocking": true
+        },
+        {
+          "id": "oq-6",
+          "text": "What exact admin roles can access Monitoring, Audit Export, and Feature Flags views?",
+          "blocking": true
+        },
+        {
+          "id": "oq-7",
+          "text": "What exact role model/claim mapping determines module entitlement and field-level masking?",
+          "blocking": true
+        },
+        {
+          "id": "oq-8",
+          "text": "What exact masked display rules apply to partially displayable payment values?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "What exact version negotiation behavior applies beyond displaying labels like `/api/v1`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What export formats are required for audit export?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What filtering behavior, pagination, and retention apply to audit export table data?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What exact monitoring alert thresholds, aggregation windows, and notification channels are required beyond the 2-second lookup breach?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What exact secure session storage/cookie settings are mandated?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "What exact controlled message copy is approved for invalid identifier, no match, retrieval error, feature disabled, and session expired states?",
+          "blocking": true
+        },
+        {
+          "id": "oq-15",
+          "text": "Are audit events required “before” response completion or “before or alongside” it for each event type when latency tradeoffs occur?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "What exact supported browsers are required for label/destination consistency testing?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 11,
+      "totalStoryPoints": 32,
+      "files": {
+        "specs": "specs/unified-servicing-workspace-auth/specs.md",
+        "requirements": "specs/unified-servicing-workspace-auth/requirements.md",
+        "tasks": "specs/unified-servicing-workspace-auth/tasks.md",
+        "prompt": "specs/unified-servicing-workspace-auth/prompt.md"
+      },
       "userStories": [
         {
-          "id": 80978,
-          "title": "Source-Grounded BRD Content Assembly",
+          "id": 78098,
+          "title": "Unified authenticated workspace entry",
           "state": "New",
           "storyPoints": null
         },
         {
-          "id": 80999,
-          "title": "As a Project Manager, I want the DemoIntern BRD generated in Markdown so that the document can be reviewed and versioned in the required format",
+          "id": 78138,
+          "title": "As a Service Agent, I want to search by a single-record identifier so that I can retrieve the correct customer and account summary quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 78147,
+          "title": "As an Account Management Specialist, I want the customer summary and related account summary shown together in the workspace so that I can review servicing context without switching to legacy tools",
           "state": "New",
           "storyPoints": 3
         },
         {
-          "id": 81007,
-          "title": "As a Business Analyst, I want the Document Control section formatted with the required two-column structure so that the DemoIntern BRD meets document governance standards",
-          "state": "New",
-          "storyPoints": 2
-        },
-        {
-          "id": 81014,
-          "title": "As a Requirements Analyst, I want Section 6 requirements presented in the mandated five-column table so that the DemoIntern BRD remains structurally compliant",
+          "id": 78155,
+          "title": "As an Account Management Specialist, I want to open Mimir and other protected modules from the workspace with shared identity context so that I can complete related servicing tasks efficiently",
           "state": "New",
           "storyPoints": 3
         },
         {
-          "id": 81021,
-          "title": "As a Documentation Lead, I want the citation catalog included in DemoIntern references so that supporting sources are consolidated in one controlled document",
+          "id": 78164,
+          "title": "As a Service Agent, I want the unified workspace to preserve my session and page context while I move across supported CM and AM screens so that I can complete servicing work with less interruption",
           "state": "New",
           "storyPoints": 2
         },
         {
-          "id": 81030,
-          "title": "As a Project Manager, I want the DemoIntern BRD aligned to the project management context so that the document reflects the stated project purpose",
+          "id": 78171,
+          "title": "As a Compliance Role, I want all protected customer and account access events recorded in an immutable audit trail so that the organization can support security and privacy reviews",
           "state": "New",
-          "storyPoints": 2
+          "storyPoints": 5
         },
         {
-          "id": 81037,
-          "title": "As a Review Coordinator, I want document status and version details carried into the DemoIntern BRD so that controlled review can proceed with clear document governance",
-          "state": "New",
-          "storyPoints": 2
-        },
-        {
-          "id": 80982,
-          "title": "As a Business Analyst, I want to compile DemoIntern BRD content from approved source requirements so that the document stays accurate and source-grounded",
+          "id": 78180,
+          "title": "As a System Administrator, I want the web workspace rollout controlled with versioned APIs and feature flags so that supported legacy CM and AM functions can transition safely",
           "state": "New",
           "storyPoints": 3
         },
         {
-          "id": 80990,
-          "title": "As a Documentation Lead, I want to flag unspecified DemoIntern BRD information so that reviewers can distinguish approved content from missing details",
+          "id": 78188,
+          "title": "As a System Administrator, I want monitoring for workspace availability and lookup performance so that the unified web workspace meets operational resilience targets",
           "state": "New",
           "storyPoints": 3
+        },
+        {
+          "id": 78114,
+          "title": "As a Service Agent, I want to sign in to the unified CM and AM web workspace with enterprise SSO so that I can start customer and account servicing from one secure entry point",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 78122,
+          "title": "As a System Administrator, I want JWT-backed application sessions validated on protected workspace requests so that only authenticated identities can use CM and AM functions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 78131,
+          "title": "As an Account Management Specialist, I want the workspace home page to show only the CM, AM, and related modules I am allowed to use so that I can enter servicing functions quickly and securely",
+          "state": "New",
+          "storyPoints": 2
         }
       ]
     }
