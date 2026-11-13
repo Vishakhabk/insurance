@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-13T09:49:41.489Z",
+  "enableTdd": false,
+  "totalFeatures": 1,
+  "features": [
+    {
+      "id": 80977,
+      "taskId": "FEATURE-80977",
+      "title": "DemoIntern Business Requirements Document",
+      "slug": "source-grounded-brd-assembly",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What is the exact approved missing-value marker text to use in Markdown cells/sections?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the exact missing-information formatting for Section 6 missing cells?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What are the mandated row labels for Document Control beyond version and status?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What are the exact five Section 6 column names and required order?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What are the exact BRD section names/order for the generated Markdown artifact beyond the UI section navigator and specifically governed sections?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What are the precise framing fields where the project name `DemoIntern` must appear?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What exact phrases/tags define approved project-management context vs unrelated domain context?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What are the exact authorized roles/permissions for generation, review, export, preview, and validation-result access?",
+          "blocking": true
+        },
+        {
+          "id": "oq-9",
+          "text": "What are the required inputs for completing the reviewer flag action?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Should the web UI generate full BRD artifacts, previews only, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What persistence model is required for drafts, markers, reviewer flags, validation results, and submitted state?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What is the exact API surface, transport, and response schema for generation, validation, save draft, submit, and audit retrieval?",
+          "blocking": true
+        },
+        {
+          "id": "oq-13",
+          "text": "What is the expected behavior for References/Traceability output format in Markdown?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "What are the SLA/response-time thresholds referenced as acceptable request window / meet SLA requirements?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "What coverage/confidence badge values and rules should the UI display?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "Are there retention requirements for drafts, logs, audit trail entries, and source-link metadata?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 9,
+      "totalStoryPoints": 20,
+      "files": {
+        "specs": "specs/source-grounded-brd-assembly/specs.md",
+        "requirements": "specs/source-grounded-brd-assembly/requirements.md",
+        "tasks": "specs/source-grounded-brd-assembly/tasks.md",
+        "prompt": "specs/source-grounded-brd-assembly/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 80978,
+          "title": "Source-Grounded BRD Content Assembly",
+          "state": "New",
+          "storyPoints": null
+        },
+        {
+          "id": 80999,
+          "title": "As a Project Manager, I want the DemoIntern BRD generated in Markdown so that the document can be reviewed and versioned in the required format",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 81007,
+          "title": "As a Business Analyst, I want the Document Control section formatted with the required two-column structure so that the DemoIntern BRD meets document governance standards",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 81014,
+          "title": "As a Requirements Analyst, I want Section 6 requirements presented in the mandated five-column table so that the DemoIntern BRD remains structurally compliant",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 81021,
+          "title": "As a Documentation Lead, I want the citation catalog included in DemoIntern references so that supporting sources are consolidated in one controlled document",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 81030,
+          "title": "As a Project Manager, I want the DemoIntern BRD aligned to the project management context so that the document reflects the stated project purpose",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 81037,
+          "title": "As a Review Coordinator, I want document status and version details carried into the DemoIntern BRD so that controlled review can proceed with clear document governance",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 80982,
+          "title": "As a Business Analyst, I want to compile DemoIntern BRD content from approved source requirements so that the document stays accurate and source-grounded",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 80990,
+          "title": "As a Documentation Lead, I want to flag unspecified DemoIntern BRD information so that reviewers can distinguish approved content from missing details",
+          "state": "New",
+          "storyPoints": 3
+        }
+      ]
+    }
+  ]
+}

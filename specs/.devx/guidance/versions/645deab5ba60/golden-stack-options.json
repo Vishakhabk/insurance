@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "projectName": "DemoIntern",
+  "generatedAt": "2026-11-13T09:49:41.363Z",
+  "source": "golden-repo-guidance",
+  "options": {
+    "ui": [],
+    "backend": [],
+    "database": [],
+    "ai": [],
+    "uiCustom": [],
+    "backendCustom": [],
+    "databaseCustom": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-13T09:49:41.363Z",
+  "repoId": null,
+  "repoName": null,
+  "provider": "ado",
+  "repoUrl": "https://dev.azure.com/GoldenRepo/f9fbe6db-7161-4725-a620-92defcb7ba57/_apis/git/repositories/5f6b45a1-8505-417e-8617-4abc9f299558",
+  "defaultBranch": "main",
+  "allFilesMode": false,
+  "requestedFilePaths": [],
+  "includedFilePaths": [],
+  "missingFilePaths": [],
+  "sourceFiles": [],
+  "warnings": [
+    "Golden Repo reference(s) skipped: ownership could not be verified."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "trackerVersion": 1,
+  "updatedAt": "2026-11-13T09:49:41.489Z",
+  "tasks": {
+    "FEATURE-80977": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "DemoIntern Business Requirements Document",
+      "featureId": 80977,
+      "slug": "source-grounded-brd-assembly",
+      "updatedAt": "2026-11-13T09:49:41.489Z"
+    }
+  }
+}
