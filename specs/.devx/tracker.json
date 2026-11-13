@@ -1,20 +1,27 @@
 {
   "trackerVersion": 1,
-  "updatedAt": "2026-11-13T10:26:48.118Z",
+  "updatedAt": "2026-11-13T15:02:25.594Z",
   "tasks": {
-    "FEATURE-80977": {
+    "FEATURE-78138": {
       "status": "NEEDS_CLARIFICATION",
-      "title": "DemoIntern Business Requirements Document",
-      "featureId": 80977,
-      "slug": "source-grounded-brd-assembly",
-      "updatedAt": "2026-11-13T10:26:48.118Z"
+      "title": "As a Service Agent, I want to search by a single-record identifier so that I can retrieve the correct customer and account summary quickly",
+      "featureId": 78138,
+      "slug": "search-by-record-identifier",
+      "updatedAt": "2026-11-13T15:02:25.594Z"
     },
-    "FEATURE-78094": {
+    "FEATURE-89780": {
       "status": "NEEDS_CLARIFICATION",
-      "title": "Unified Cloud-Ready CM and AM Web Workspace",
-      "featureId": 78094,
-      "slug": "unified-servicing-workspace-auth",
-      "updatedAt": "2026-11-13T10:26:48.118Z"
+      "title": "Fraud Detection As a Compliance Officer, I want DemoIntern to retain and audit account management planning records and AI interaction evidence so that regulated banking reviews can verify who did what, when, and under which policy",
+      "featureId": 89780,
+      "slug": "fraud-detection-audit-trail",
+      "updatedAt": "2026-11-13T15:02:25.594Z"
+    },
+    "FEATURE-91918": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "Edited As a Bug Management User, I want to record a bug for the DemoIntern project so that defects are captured with consistent and traceable information",
+      "featureId": 91918,
+      "slug": "record-bug-demointern-project",
+      "updatedAt": "2026-11-13T15:02:25.594Z"
     }
   }
 }

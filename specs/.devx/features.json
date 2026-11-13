@@ -1,273 +1,204 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-11-13T10:26:48.118Z",
+  "generatedAt": "2026-11-13T15:02:25.594Z",
   "enableTdd": false,
-  "totalFeatures": 2,
+  "totalFeatures": 3,
   "features": [
     {
-      "id": 80977,
-      "taskId": "FEATURE-80977",
-      "title": "DemoIntern Business Requirements Document",
-      "slug": "source-grounded-brd-assembly",
+      "id": 78138,
+      "taskId": "FEATURE-78138",
+      "title": "As a Service Agent, I want to search by a single-record identifier so that I can retrieve the correct customer and account summary quickly",
+      "slug": "search-by-record-identifier",
       "state": "planned",
       "status": "needs-clarification",
       "openQuestions": [
         {
           "id": "oq-1",
-          "text": "What is the exact approved missing-value marker text to use in Markdown cells/sections?",
+          "text": "What specific identifier types are supported for \"single-record identifier\" search (e.g., customer ID, account number), and what are their exact format/validation rules?",
           "blocking": false
         },
         {
           "id": "oq-2",
-          "text": "What is the exact missing-information formatting for Section 6 missing cells?",
-          "blocking": false
+          "text": "What is the exact API endpoint path, method, request/response schema, and versioning contract for the search/lookup operation?",
+          "blocking": true
         },
         {
           "id": "oq-3",
-          "text": "What are the mandated row labels for Document Control beyond version and status?",
-          "blocking": false
+          "text": "Is field masking applied server-side (API response) or client-side (UI only), and what is the precise role-to-field masking matrix?",
+          "blocking": true
         },
         {
           "id": "oq-4",
-          "text": "What are the exact five Section 6 column names and required order?",
+          "text": "What specific error codes/taxonomy distinguish invalid input, no-match, and retrieval-error responses at the API level?",
           "blocking": false
         },
         {
           "id": "oq-5",
-          "text": "What are the exact BRD section names/order for the generated Markdown artifact beyond the UI section navigator and specifically governed sections?",
-          "blocking": false
+          "text": "What are the exact role definitions and permission boundaries beyond \"Service Agent\" and \"admin,\" and how do they affect which summary fields are visible or restricted?",
+          "blocking": true
         },
         {
           "id": "oq-6",
-          "text": "What are the precise framing fields where the project name `DemoIntern` must appear?",
+          "text": "What is the expected data retention period for audit events and search telemetry?",
           "blocking": false
         },
         {
           "id": "oq-7",
-          "text": "What exact phrases/tags define approved project-management context vs unrelated domain context?",
+          "text": "Is idempotency a requirement for repeated identical searches (e.g., caching behavior), and if so, what are the rules?",
           "blocking": false
         },
         {
           "id": "oq-8",
-          "text": "What are the exact authorized roles/permissions for generation, review, export, preview, and validation-result access?",
+          "text": "What constitutes \"expected load\" for the 2-second SLA (e.g., concurrent user count, request volume)?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 5,
+      "files": {
+        "specs": "specs/search-by-record-identifier/specs.md",
+        "requirements": "specs/search-by-record-identifier/requirements.md",
+        "tasks": "specs/search-by-record-identifier/tasks.md",
+        "prompt": "specs/search-by-record-identifier/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 78138,
+          "title": "As a Service Agent, I want to search by a single-record identifier so that I can retrieve the correct customer and account summary quickly",
+          "state": "New",
+          "storyPoints": 5
+        }
+      ]
+    },
+    {
+      "id": 89780,
+      "taskId": "FEATURE-89780",
+      "title": "Fraud Detection As a Compliance Officer, I want DemoIntern to retain and audit account management planning records and AI interaction evidence so that regulated banking reviews can verify who did what, when, and under which policy",
+      "slug": "fraud-detection-audit-trail",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Confirm whether the Compliance Officer audit/export review interface is part of the native mobile app, a separate web/admin console, or both.",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "What specific roles qualify as \"approved support roles,\" and how is that approval granted/maintained?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "What are the exact UI screen layouts, navigation flows, copy/tone, and accessibility requirements for the governed audit/records review interface?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What are the full request/response schemas, status codes, and idempotency behaviors for each listed API endpoint?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What are the specific retention period durations and disposition rules per record/policy class?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What fields constitute \"unauthorized sensitive content\" subject to masking/exclusion in exports?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "Is a legal_hold table/workflow actually implemented, or only conditionally applicable \"if applicable by policy\"?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What is the defined \"approved operational window\" for nightly retention batch processing?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 8,
+      "files": {
+        "specs": "specs/fraud-detection-audit-trail/specs.md",
+        "requirements": "specs/fraud-detection-audit-trail/requirements.md",
+        "tasks": "specs/fraud-detection-audit-trail/tasks.md",
+        "prompt": "specs/fraud-detection-audit-trail/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 89780,
+          "title": "Fraud Detection As a Compliance Officer, I want DemoIntern to retain and audit account management planning records and AI interaction evidence so that regulated banking reviews can verify who did what, when, and under which policy",
+          "state": "New",
+          "storyPoints": 8
+        }
+      ]
+    },
+    {
+      "id": 91918,
+      "taskId": "FEATURE-91918",
+      "title": "Edited As a Bug Management User, I want to record a bug for the DemoIntern project so that defects are captured with consistent and traceable information",
+      "slug": "record-bug-demointern-project",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What are the exact field length limits for title and description (\"overlength\" is referenced but no numeric limit is specified)?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What specific error response schema/status codes should be returned for validation failures and project-scope errors?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "Is there a defined UI (web/mobile) for bug creation, or is this feature purely an API/service capability with no first-party client described?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What values/codes populate `bug_status_lookup`, `bug_priority_lookup`, and `bug_severity_lookup` for DemoIntern?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "Is the create operation idempotent, or can duplicate submissions create multiple records?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What are the exact error responses/status codes for `GET /api/projects/{projectId}/bugs/{bugId}` when the bug or project is not found?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What is the data retention policy for bug records?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Are there additional actor roles (e.g., admin, auditor) with different permissions beyond the Bug Management User?",
           "blocking": true
         },
         {
           "id": "oq-9",
-          "text": "What are the required inputs for completing the reviewer flag action?",
-          "blocking": false
-        },
-        {
-          "id": "oq-10",
-          "text": "Should the web UI generate full BRD artifacts, previews only, or both?",
-          "blocking": false
-        },
-        {
-          "id": "oq-11",
-          "text": "What persistence model is required for drafts, markers, reviewer flags, validation results, and submitted state?",
-          "blocking": false
-        },
-        {
-          "id": "oq-12",
-          "text": "What is the exact API surface, transport, and response schema for generation, validation, save draft, submit, and audit retrieval?",
-          "blocking": true
-        },
-        {
-          "id": "oq-13",
-          "text": "What is the expected behavior for References/Traceability output format in Markdown?",
-          "blocking": false
-        },
-        {
-          "id": "oq-14",
-          "text": "What are the SLA/response-time thresholds referenced as acceptable request window / meet SLA requirements?",
-          "blocking": false
-        },
-        {
-          "id": "oq-15",
-          "text": "What coverage/confidence badge values and rules should the UI display?",
-          "blocking": false
-        },
-        {
-          "id": "oq-16",
-          "text": "Are there retention requirements for drafts, logs, audit trail entries, and source-link metadata?",
+          "text": "What sanitization method/library or rule set should be applied to title/description content?",
           "blocking": false
         }
       ],
       "storyCount": 0,
       "totalStoryPoints": 0,
       "files": {
-        "specs": "specs/source-grounded-brd-assembly/specs.md",
-        "requirements": "specs/source-grounded-brd-assembly/requirements.md",
-        "tasks": "specs/source-grounded-brd-assembly/tasks.md",
-        "prompt": "specs/source-grounded-brd-assembly/prompt.md"
+        "specs": "specs/record-bug-demointern-project/specs.md",
+        "requirements": "specs/record-bug-demointern-project/requirements.md",
+        "tasks": "specs/record-bug-demointern-project/tasks.md",
+        "prompt": "specs/record-bug-demointern-project/prompt.md"
       },
       "userStories": []
-    },
-    {
-      "id": 78094,
-      "taskId": "FEATURE-78094",
-      "title": "Unified Cloud-Ready CM and AM Web Workspace",
-      "slug": "unified-servicing-workspace-auth",
-      "state": "planned",
-      "status": "needs-clarification",
-      "openQuestions": [
-        {
-          "id": "oq-1",
-          "text": "What exact single-record identifier formats are supported?",
-          "blocking": false
-        },
-        {
-          "id": "oq-2",
-          "text": "What exact customer/account summary retrieval API endpoints, methods, and schemas are approved?",
-          "blocking": false
-        },
-        {
-          "id": "oq-3",
-          "text": "Is the coordinated customer/account retrieval one API call or multiple orchestrated calls?",
-          "blocking": false
-        },
-        {
-          "id": "oq-4",
-          "text": "What exact route list supports inherited context vs default protected state?",
-          "blocking": false
-        },
-        {
-          "id": "oq-5",
-          "text": "What exact module catalog is in scope beyond CM, AM, and Mimir/related modules?",
-          "blocking": true
-        },
-        {
-          "id": "oq-6",
-          "text": "What exact admin roles can access Monitoring, Audit Export, and Feature Flags views?",
-          "blocking": true
-        },
-        {
-          "id": "oq-7",
-          "text": "What exact role model/claim mapping determines module entitlement and field-level masking?",
-          "blocking": true
-        },
-        {
-          "id": "oq-8",
-          "text": "What exact masked display rules apply to partially displayable payment values?",
-          "blocking": false
-        },
-        {
-          "id": "oq-9",
-          "text": "What exact version negotiation behavior applies beyond displaying labels like `/api/v1`?",
-          "blocking": false
-        },
-        {
-          "id": "oq-10",
-          "text": "What export formats are required for audit export?",
-          "blocking": false
-        },
-        {
-          "id": "oq-11",
-          "text": "What filtering behavior, pagination, and retention apply to audit export table data?",
-          "blocking": false
-        },
-        {
-          "id": "oq-12",
-          "text": "What exact monitoring alert thresholds, aggregation windows, and notification channels are required beyond the 2-second lookup breach?",
-          "blocking": false
-        },
-        {
-          "id": "oq-13",
-          "text": "What exact secure session storage/cookie settings are mandated?",
-          "blocking": false
-        },
-        {
-          "id": "oq-14",
-          "text": "What exact controlled message copy is approved for invalid identifier, no match, retrieval error, feature disabled, and session expired states?",
-          "blocking": true
-        },
-        {
-          "id": "oq-15",
-          "text": "Are audit events required “before” response completion or “before or alongside” it for each event type when latency tradeoffs occur?",
-          "blocking": false
-        },
-        {
-          "id": "oq-16",
-          "text": "What exact supported browsers are required for label/destination consistency testing?",
-          "blocking": false
-        }
-      ],
-      "storyCount": 11,
-      "totalStoryPoints": 32,
-      "files": {
-        "specs": "specs/unified-servicing-workspace-auth/specs.md",
-        "requirements": "specs/unified-servicing-workspace-auth/requirements.md",
-        "tasks": "specs/unified-servicing-workspace-auth/tasks.md",
-        "prompt": "specs/unified-servicing-workspace-auth/prompt.md"
-      },
-      "userStories": [
-        {
-          "id": 78098,
-          "title": "Unified authenticated workspace entry",
-          "state": "New",
-          "storyPoints": null
-        },
-        {
-          "id": 78138,
-          "title": "As a Service Agent, I want to search by a single-record identifier so that I can retrieve the correct customer and account summary quickly",
-          "state": "New",
-          "storyPoints": 5
-        },
-        {
-          "id": 78147,
-          "title": "As an Account Management Specialist, I want the customer summary and related account summary shown together in the workspace so that I can review servicing context without switching to legacy tools",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78155,
-          "title": "As an Account Management Specialist, I want to open Mimir and other protected modules from the workspace with shared identity context so that I can complete related servicing tasks efficiently",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78164,
-          "title": "As a Service Agent, I want the unified workspace to preserve my session and page context while I move across supported CM and AM screens so that I can complete servicing work with less interruption",
-          "state": "New",
-          "storyPoints": 2
-        },
-        {
-          "id": 78171,
-          "title": "As a Compliance Role, I want all protected customer and account access events recorded in an immutable audit trail so that the organization can support security and privacy reviews",
-          "state": "New",
-          "storyPoints": 5
-        },
-        {
-          "id": 78180,
-          "title": "As a System Administrator, I want the web workspace rollout controlled with versioned APIs and feature flags so that supported legacy CM and AM functions can transition safely",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78188,
-          "title": "As a System Administrator, I want monitoring for workspace availability and lookup performance so that the unified web workspace meets operational resilience targets",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78114,
-          "title": "As a Service Agent, I want to sign in to the unified CM and AM web workspace with enterprise SSO so that I can start customer and account servicing from one secure entry point",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78122,
-          "title": "As a System Administrator, I want JWT-backed application sessions validated on protected workspace requests so that only authenticated identities can use CM and AM functions",
-          "state": "New",
-          "storyPoints": 3
-        },
-        {
-          "id": 78131,
-          "title": "As an Account Management Specialist, I want the workspace home page to show only the CM, AM, and related modules I am allowed to use so that I can enter servicing functions quickly and securely",
-          "state": "New",
-          "storyPoints": 2
-        }
-      ]
     }
   ]
 }
